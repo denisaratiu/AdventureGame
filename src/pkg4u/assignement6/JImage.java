@@ -14,7 +14,7 @@ import javax.swing.JComponent;
  *
  * @author ratid6445
  */
-public class ImagePanel extends JComponent {
+public class JImage extends JComponent {
         // get the buffered images
         private BufferedImage img = null;
 
@@ -30,7 +30,7 @@ public class ImagePanel extends JComponent {
         public void setImage(BufferedImage img) {
             this.img = img;
             //repaint to draw
-            repaint();
+            this.repaint();
         }
     }
 
