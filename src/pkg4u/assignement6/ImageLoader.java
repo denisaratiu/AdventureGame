@@ -20,15 +20,13 @@ public class ImageLoader {
     public static BufferedImage loadImage(String file) {
         // load the images
         BufferedImage image;
+        image = null;
         try {
             // get the images from the file
             image = ImageIO.read(new File("images/" + file));
-            //return the image
-            return image;
             // exception thread
         } catch (IOException e) {
             e.printStackTrace();
-            System.exit(1);
         }
         //returns null to avoid errors
         return null;

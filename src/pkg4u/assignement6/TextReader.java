@@ -1,7 +1,13 @@
 package pkg4u.assignement6;
 
 
-import pkg4u.assignement6.Image;
+import java.awt.List;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,8 +29,8 @@ public class TextReader {
         try{
             file = new FileReader(fileName);
             // excpetion 
-        }catch (File)
+        }catch (FileNotFoundException ex){
+            Logger.getLogger(TextReader.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
 }
