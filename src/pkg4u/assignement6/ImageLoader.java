@@ -28,7 +28,7 @@ public class ImageLoader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //returns null to avoid errors
-        return null;
+        //returns image
+        return image;
     }
 }
