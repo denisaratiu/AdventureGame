@@ -24,43 +24,34 @@ public class Image {
     private boolean isBlocked;
     // if the front is not blocked, get the next image
     private Image nextImage;
-
-    public Image(String fileName, char dir, Location location, boolean isBlocked){
-        //set all variables passed into the class variable
-        this.name = fileName;
-        this.dir = dir;
-        this.location = location;
-        this.nextImage = nextImage;
-        this.isBlocked = isBlocked;        
-    }
-    
-    // set the image
-    public String setNextImage(Image image) {
-        this.nextImage = image;
-    }
-
+   
     // get the image
-    public String getName() {
+    public String getName(String fileName) {
+        this.name = fileName;
         return name;
     }
     
     // get the direction
-    public char getDir(){
+    public char getDir(char dir){
+        this.dir = dir;
         return dir;
     }
     
     // get location
-    public Location getLocation(){
+    public Location getLocation(Location location){
+        this.location = location;
         return location;
     }
     
     // get the next image
-    public Image getNextImage(){
+    public Image getNextImage(Image nextImage){
+        this.nextImage = nextImage;
         return nextImage;
     }
 
     // see if can move
-    public boolean isBlocked() {
+    public boolean isBlocked(boolean isBlocked) {
+        this.isBlocked = isBlocked;
         return isBlocked;
     }
 }
